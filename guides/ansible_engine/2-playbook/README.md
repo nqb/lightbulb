@@ -48,7 +48,7 @@ Now that we've defined your play, let's add some tasks to get some things done. 
       name: httpd
       state: present
 
-  - name: Ensure latest httpd.conf file is present
+  - name: Ensure latest index.html file is present
     copy:
       src: files/index.html
       dest: /var/www/html/
@@ -78,7 +78,7 @@ Now that we've defined your play, let's add some tasks to get some things done. 
     dest: /var/www/html/
 ```
 
-* These four lines ensure that the `httpd.conf` file is copied over to the target node. [Click here](http://docs.ansible.com/ansible/copy_module.html) to see all options for the copy module.
+* These four lines ensure that the `index.html` file is copied over to the target node. [Click here](http://docs.ansible.com/ansible/copy_module.html) to see all options for the copy module.
 
 ```yml
 - name: Ensure httpd is started
