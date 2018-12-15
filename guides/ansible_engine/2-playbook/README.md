@@ -33,8 +33,8 @@ Now that you are editing `site.yml`, let's begin by defining the play and then u
 ```
 
 * `---` Defines the beginning of YAML
-* `hosts: web` Defines the host group in your inventory on which this play will run against
 * `name: install and start apache` This describes our play
+* `hosts: web` Defines the host group in your inventory on which this play will run against
 * `become: yes` Enables user privilege escalation.  The default is sudo, but su, pbrun, and [several others](http://docs.ansible.com/ansible/become.html) are also supported.
 
 ## Section 3: Adding Tasks to Your Play
